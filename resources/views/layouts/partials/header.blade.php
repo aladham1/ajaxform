@@ -178,7 +178,7 @@
                     <h1 class="text-lg font-medium leading-6 text-gray-900 sm:truncate">Home</h1>
                 </div>
                 <div class="mt-4 flex sm:mt-0 sm:ml-4">
-                    <a href="/create">
+                    <a href="{{route('create')}}">
                     <button type="button"
                             class="order-0
                             inline-flex
