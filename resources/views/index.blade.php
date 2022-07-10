@@ -3,10 +3,10 @@
 
     <div class="hidden mt-8 sm:block">
         <div class="align-middle inline-block min-w-full border-b border-gray-200">
-            <form id="searchform" name="searchform">
-            <input type="text" class="p-2 rounded-md ml-2 border" name="name" onkeyup="ajaxSearch(event,0)"
-                   id="search_form" placeholder="Search by name">
-            </form>
+{{--            <form id="searchform" name="searchform">--}}
+{{--            <input type="text" class="p-2 rounded-md ml-2 border" name="name" onkeyup="ajaxSearch(event,0)"--}}
+{{--                   id="search_form" placeholder="Search by name">--}}
+{{--            </form>--}}
             <div id="pagination_data" class="mt-4">
                 @include("article-pagination",["articles"=>$contacts])
             </div>
