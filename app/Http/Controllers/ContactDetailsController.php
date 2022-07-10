@@ -14,7 +14,8 @@ class ContactDetailsController extends Controller
     {
 
         $articles = ContactDetails::when($request->has("name"), function ($q) use ($request) {
-            return $q->where("first_name", "like", "%" . $request->get("name") . "%");
+            return $q->where("first_name", "like", "%" . $request->get("name") . "%")
+                ->orWhere("last_name", "like", "%" . $request->get("name") . "%");
         })->paginate(5);
         if ($request->ajax()) {
             return view('article-pagination ', ['contacts' => $articles]);
